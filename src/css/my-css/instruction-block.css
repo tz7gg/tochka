@@ -1,0 +1,38 @@
+.instruction {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    &.active {
+        display: block;
+    }
+    &__wrap {
+        background-color: #fff;
+        max-width: 477px;
+        padding: 59px 37px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        &__close {
+            position: absolute;
+            right: 30px;
+            top: 25px;
+            cursor: pointer;
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 130%;
+            padding-bottom: 22px;
+        }
+        &__text {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 130%;
+        }
+    }
+}
