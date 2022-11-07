@@ -1,0 +1,13 @@
+body {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
