@@ -29,6 +29,7 @@
             padding-bottom: 26px;
             @media (max-width: 1024px) {
                 padding-bottom: 0;
+                line-height: 20px;
             }
         }
         &__count {
