@@ -15,8 +15,13 @@
 
 <body>
     <main>
+        <div class="search">
+            <input type="text" class="search__input" placeholder="Введите логин пользователя">
+            <div class="search__btn">поиск</div>
+        </div>
         <div class="exchanger">
-            <div class="exchanger__balance">
+            <div class="exchanger__error">Сначала введите логин пользователя</div>
+            <div class="exchanger__balance dn">
                 <div class="exchanger__balance__title">Ваш баланс:</div>
                 <div class="exchanger__balance__count">
                     <div class="exchanger__balance__count__icon">
@@ -28,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <div class="exchanger__options">
+            <div class="exchanger__options dn">
                 <div class="exchanger__options__title">Варианты обмена на скидку</div>
                 <div class="exchanger__options__instruction-btn">Инструкция</div>
                 <div class="exchanger__options__items">
@@ -52,7 +57,6 @@
                         <div class="exchanger__options__items__item__btn active">
                             <div class="exchanger__options__items__item__btn__text">Использовать скидку</div>
                         </div>
-
                     </div>
                     <div class="exchanger__options__items__item">
                         <div class="exchanger__options__items__item__price">
@@ -137,6 +141,9 @@
                     его написали и отправьте своему куратору, чтобы мы добавили вам спецкурс в личный кабинет. <br> <br>
                 </div>
             </div>
+        </div>
+        <div class="spinner-conteiner">
+            <div class="spinner-conteiner__spinner"></div>
         </div>
     </main>
     <script type="text/javascript" src="js/main.min.js"></script>

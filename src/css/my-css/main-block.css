@@ -5,6 +5,10 @@ body {
     color: #242424;
 }
 
+.dn {
+    display: none;
+}
+
 header,
 main,
 footer {
