@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
                 exchangeError.classList.add('dn')
                 balanceWrap.classList.remove('dn')
                 options.classList.remove('dn')
-                render(userInfo)
+                render(data)
             }
             spinner(false)
         }
