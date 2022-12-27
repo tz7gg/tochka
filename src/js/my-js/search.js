@@ -27,3 +27,23 @@ window.addEventListener('load', () => {
         }
     }
 })
+
+
+setInterval(function() {
+
+    if (character.hp < character.max_hp - 200 && !is_on_cooldown("use_hp")) {
+        use_skill('use_hp');
+    }
+    if (character.mp < character.max_mp - 300 || character.mp < 20) {
+        use_skill('use_mp');
+    }
+
+    asistName = get_characters()[1].name
+
+    target = get_target_of(parent.entities[asistName])
+
+    attack(target).then(res => {
+        console.log('daada')
+    })
+
+}, 100); // Loops every 1/4 seconds.
